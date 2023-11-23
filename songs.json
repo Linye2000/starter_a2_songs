@@ -1,33 +1,27 @@
 [
     {
-        "title": "Amazing Grace",
-        "artist": "John Newton",
-        "year": 1779,
-        "is_learned": true
+        "title": "10:30",
+        "artist": "DT",
+        "year": 2022,
+        "is_learned": false
+    },
+    {
+        "title": "Melody",
+        "artist": "David Tao",
+        "year": 2002,
+        "is_learned": false
     },
     {
         "title": "Heartbreak Hotel",
         "artist": "Elvis Presley",
         "year": 1956,
-        "is_learned": true
-    },
-    {
-        "title": "I Want to Hold Your Hand",
-        "artist": "The Beatles",
-        "year": 1964,
         "is_learned": false
     },
     {
-        "title": "My Sharona",
-        "artist": "The Knack",
-        "year": 1979,
-        "is_learned": true
-    },
-    {
-        "title": "Macarena",
-        "artist": "Los Del Rio",
-        "year": 1996,
-        "is_learned": true
+        "title": "Amazing Grace",
+        "artist": "John Newton",
+        "year": 1779,
+        "is_learned": false
     },
     {
         "title": "lu'ji",
@@ -36,21 +30,27 @@
         "is_learned": true
     },
     {
-        "title": "Melody",
-        "artist": "David Tao",
-        "year": 2002,
-        "is_learned": true
+        "title": "Macarena",
+        "artist": "Los Del Rio",
+        "year": 1996,
+        "is_learned": false
+    },
+    {
+        "title": "I Want to Hold Your Hand",
+        "artist": "The Beatles",
+        "year": 1964,
+        "is_learned": false
     },
     {
         "title": "Boom Boom Pow",
         "artist": "The Black Eyed Peas",
         "year": 2009,
-        "is_learned": true
+        "is_learned": false
     },
     {
-        "title": "10:30",
-        "artist": "DT",
-        "year": 2022,
-        "is_learned": true
+        "title": "My Sharona",
+        "artist": "The Knack",
+        "year": 1979,
+        "is_learned": false
     }
 ]
