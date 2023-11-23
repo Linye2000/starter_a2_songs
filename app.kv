@@ -1,72 +1,68 @@
-# 2DO: Create your Kivy layout in the kv language here
+# Kivy layout in the kv language
 
 BoxLayout:
-    orientation: 'horizontal'
-
+    orientation: 'horizontal'  # Main layout with horizontal orientation
 
     BoxLayout:
-        orientation: 'vertical'
-        size_hint_x: None
-        width: 300
-        spacing: 10
-        padding: 10
+        orientation: 'vertical'  # Sub-layout for controls, oriented vertically
+        size_hint_x: None  # Disable horizontal size hint to use fixed width
+        width: 300  # Fixed width of 300 pixels for the control box
+        spacing: 10  # Space between child widgets
+        padding: 10  # Padding inside the box layout
 
         Label:
-            text: 'Sort by:'
+            text: 'Sort by:'  # Label to indicate sorting options
         Spinner:
-            id: sort_spinner
-            text: 'Artist'
-            values: ['Artist','Title','Year', 'Learned']
-            on_text: app.sort_songs(self.text)
+            id: sort_spinner  # Identifier for the spinner
+            text: 'Artist'  # Default display text
+            values: ['Artist', 'Title', 'Year', 'Learned']  # Options for sorting
+            on_text: app.sort_songs(self.text)  # Event to sort songs when option is selected
         TextInput:
-            id: title_input
-            hint_text: 'Title'
-            multiline: False
+            id: title_input  # Identifier for title input
+            hint_text: 'Title'  # Placeholder text
+            multiline: False  # Single line input
         TextInput:
-            id: artist_input
-            hint_text: 'Artist'
-            multiline: False
+            id: artist_input  # Identifier for artist input
+            hint_text: 'Artist'  # Placeholder text
+            multiline: False  # Single line input
         TextInput:
-            id: year_input
-            hint_text: 'Year'
-            multiline: False
+            id: year_input  # Identifier for year input
+            hint_text: 'Year'  # Placeholder text
+            multiline: False  # Single line input
         Button:
-            text: 'Add Song'
-            on_release: app.add_song()
+            text: 'Add Song'  # Button text
+            on_release: app.add_song()  # Event to add a song on button press
         Button:
-            text: 'Clear'
-            on_release: app.clear_inputs()
-
+            text: 'Clear'  # Button text
+            on_release: app.clear_inputs()  # Event to clear inputs on button press
 
     BoxLayout:
-        orientation: 'vertical'
-        size_hint_x: None
-        width: 500
-
+        orientation: 'vertical'  # Sub-layout for displaying songs, oriented vertically
+        size_hint_x: None  # Disable horizontal size hint to use fixed width
+        width: 500  # Fixed width for the display box
 
         BoxLayout:
-            orientation: 'horizontal'
-            size_hint_y: None
-            height: 30
+            orientation: 'horizontal'  # Layout for song counters
+            size_hint_y: None  # Disable vertical size hint to use fixed height
+            height: 30  # Fixed height
 
             Label:
-                text: "To Learn: {}".format(app.to_learn)
+                text: "To Learn: {}".format(app.to_learn)  # Display number of songs to learn
             Label:
-                text: "Learned: {}".format(app.learned)
+                text: "Learned: {}".format(app.learned)  # Display number of songs learned
 
         ScrollView:
-            size_hint_x: 1
+            size_hint_x: 1  # Occupy all available horizontal space
 
             GridLayout:
-                id: songs_box
-                cols: 1
-                size_hint_y: 1
-                height: 200
-                width:200
-
+                id: songs_box  # Identifier for the grid layout
+                cols: 1  # One column layout
+                size_hint_y: 1  # Occupy all available vertical space
+                height: 200  # Minimum height
+                width: 200  # Width of the grid
 
         Label:
-            id: status_label
-            size_hint_y: None
-            height: 30
-            text: app.status_text
+            id: status_label  # Identifier for status label
+            size_hint_y: None  # Disable vertical size hint to use fixed height
+            height: 30  # Fixed height
+            text: app.status_text  # Text to display status messages
