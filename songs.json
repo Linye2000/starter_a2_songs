@@ -15,7 +15,7 @@
         "title": "I Want to Hold Your Hand",
         "artist": "The Beatles",
         "year": 1964,
-        "is_learned": true
+        "is_learned": false
     },
     {
         "title": "My Sharona",
@@ -39,12 +39,18 @@
         "title": "Melody",
         "artist": "David Tao",
         "year": 2002,
-        "is_learned": false
+        "is_learned": true
     },
     {
         "title": "Boom Boom Pow",
         "artist": "The Black Eyed Peas",
         "year": 2009,
+        "is_learned": true
+    },
+    {
+        "title": "10:30",
+        "artist": "DT",
+        "year": 2022,
         "is_learned": true
     }
 ]
